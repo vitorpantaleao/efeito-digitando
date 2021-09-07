@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: linear-gradient(270deg, #3f18b9, #b94418);
+    background-size: 400% 400%;
+
+    -webkit-animation: typingEffect 10s ease infinite;
+    -moz-animation: typingEffect 10s ease infinite;
+    -o-animation: typingEffect 10s ease infinite;
+    animation: typingEffect 10s ease infinite;
+}
+
+@-webkit-keyframes typingEffect {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes typingEffect {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-o-keyframes typingEffect {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes typingEffect {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+.typing h1 {
+    color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 4em;
+    text-align: center;
+    overflow: hidden;
+    border-right: .15em solid #00D8FF;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-animation .5s step-end infinite;
+    /* background: url(/tecnologia.jpg); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-weight: lighter;
+    text-shadow: 5px 5px 0px #000;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%;}
+}
+
+@keyframes blink-animation {
+    from, to {border-color: transparent}
+    50% {border-color: #00D8FF;}
+}
